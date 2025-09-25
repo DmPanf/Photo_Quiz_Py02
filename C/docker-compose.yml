@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  quizbot:
+    build: .
+    container_name: quiz_bot
+    restart: always
+    environment:
+      - BOT_TOKEN=${BOT_TOKEN}
